@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+     allowedHosts: ["docker-exercise-wufd.onrender.com"]
   },
   plugins: [
     react()

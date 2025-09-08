@@ -1,0 +1,12 @@
+services:
+  viteapp:
+    build: .
+    container_name: vite_app
+    ports:
+      - "4173:4173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./uploads:/app/public/uploads
+    environment:
+      - NODE_ENV=production
